@@ -6,12 +6,12 @@ const bot = new TeleBot(process.env.TELEGRAM_BOT_TOKEN)
 
 // bot.on(['Привет', '/hello'], (msg) => msg.reply.text('Welcome Програмист!'));
 
-// bot.on('/hello', (msg) => {
-//     return bot.sendMessage(msg.from.id, `Hello, ${ msg.from.first_name }!`);
-//   });
+bot.on('/hello', (msg) => {
+    return bot.sendMessage(msg.from.id, `Hello, ${ msg.from.first_name }!`);
+  });
 
   bot.on('edit', (msg) => {
-    return msg.reply.text('I saw it! You edited message!', { asReply: true }); // при изминении приходит сообщение
+    return msg.reply.text('Я видел это! Вы отредактировали сообщение!', { asReply: true }); // при изминении приходит сообщение
 });
 
   console.log('testik');
