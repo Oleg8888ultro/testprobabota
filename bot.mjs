@@ -10,6 +10,8 @@ bot.on('/hello', (msg) => {
     return bot.sendMessage(msg.from.id, `Hello, ${ msg.from.first_name }!`);
   });
 
+  console.log('test');
+
 // bot.hears('Привет', (ctx) => ctx.reply('Приветик мой родной'))
 // bot.hears('Как дела?', (ctx) => ctx.reply('Отлично'))
 // 
