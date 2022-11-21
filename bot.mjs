@@ -11,7 +11,7 @@ const bot = new TeleBot(process.env.TELEGRAM_BOT_TOKEN)
 //   });
 
   bot.on('edit', (msg) => {
-    return msg.reply.text('I saw it! You edited message!', { asReply: true });
+    return msg.reply.text('I saw it! You edited message!', { asReply: true }); // при изминении приходит сообщение
 });
 
   console.log('testik');
