@@ -10,6 +10,10 @@ bot.on('/hello', (msg) => {
     return bot.sendMessage(msg.from.id, `Hello, ${ msg.from.first_name }!`);
   });
 
+  bot.on('edit', (msg) => {
+    return msg.reply.text('I saw it! You edited message!', { asReply: true });
+});
+
   console.log('testik');
 
 // bot.hears('Привет', (ctx) => ctx.reply('Приветик мой родной'))
