@@ -16,7 +16,7 @@ const bot = new TeleBot(process.env.TELEGRAM_BOT_TOKEN)
 
 
 
-  console.log('testik');
+ // console.log('testik');
 
 // bot.hears('Привет', (ctx) => ctx.reply('Приветик мой родной'))
 // bot.hears('Как дела?', (ctx) => ctx.reply('Отлично'))
