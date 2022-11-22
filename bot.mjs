@@ -11,8 +11,10 @@ const bot = new TeleBot(process.env.TELEGRAM_BOT_TOKEN)
 //   });
 
   bot.on('edit', (msg) => {
-    return msg.reply.text('You edited 1 message!', { asReply: true }); // при изминении приходит сообщение
+    answerPreCheckoutQuery(<pre_checkout_query_id>, <ok> {errorMessage // при изминении приходит сообщение
 });
+
+
 
   console.log('testik');
 
