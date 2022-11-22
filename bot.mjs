@@ -2,7 +2,7 @@ import TeleBot from "telebot"
 
 const bot = new TeleBot(process.env.TELEGRAM_BOT_TOKEN)
 
-// bot.on('text', msg => msg.reply.text(msg.text))
+ bot.on('text', msg => msg.reply.text(msg.text))
 
 // bot.on(['Привет', '/hello'], (msg) => msg.reply.text('Welcome Програмист!'));
 
@@ -10,9 +10,9 @@ const bot = new TeleBot(process.env.TELEGRAM_BOT_TOKEN)
 //     return bot.sendMessage(msg.from.id, `Hello, ${ msg.from.first_name }!`);
 //   });
 
-  bot.on('edit', (msg) => {
-    answerPreCheckoutQuery(<pre_checkout_query_id>, <ok> {errorMessage // при изминении приходит сообщение
-});
+//   bot.on('edit', (msg) => {
+//     answerPreCheckoutQuery(<pre_checkout_query_id>, <ok> {errorMessage // при изминении приходит сообщение
+// });
 
 
 
